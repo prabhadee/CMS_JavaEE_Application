@@ -1,0 +1,109 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    background-color: #1e1e1e;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* Form labels & inputs */
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ffffff44;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: 0.3s border ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #ffffffaa;
+}
+
+/* Error Styling */
+.error {
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+}
+
+.invalid {
+    border-color: #ff4d4d;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+/* Dashboard button styling (overridden inline styling if needed) */
+.container form[action$="employee-dashboard.jsp"] button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #ffffff11;
+    color: #ffffff;
+    border: 1px solid #ffffff44;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container form[action$="employee-dashboard.jsp"] button:hover {
+    background-color: #ffffff33;
+}

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7fc;
+    color: #1d1d1d;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #001f3f; /* Navy Blue */
+    color: white;
+    width: 260px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.welcome-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.welcome-section p {
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.logout-btn {
+    display: block;
+    background-color: #ff4c4c;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #001f3f;
+}
+
+.header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.stats-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #f0f4fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #ccc;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #001f3f;
+}
+
+.stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+/* Status Colors */
+.pending { border-left-color: #ff9800; }
+.in-progress { border-left-color: #2196f3; }
+.resolved { border-left-color: #4caf50; }
+.rejected { border-left-color: #f44336; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
