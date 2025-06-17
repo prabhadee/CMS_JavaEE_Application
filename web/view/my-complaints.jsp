@@ -15,7 +15,7 @@
 <div class="peer">
     <form action="<%= request.getContextPath() %>/view/employee-dashboard.jsp" style="position: absolute; right: 10px; top: 10px;">
         <button type="submit" style="background-color: #f44336; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
-            DashBoard
+            🧭 Dashboard
         </button>
     </form>
     <h1>My Complaints</h1>

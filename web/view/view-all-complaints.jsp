@@ -18,7 +18,7 @@
     <div style="text-align: center; position: relative;">
         <form action="<%= request.getContextPath() %>/view/admin-dashboard.jsp" style="position: absolute; right: 10px; top: 10px;">
             <button type="submit" style="background-color: #f44336; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
-                Dashboard
+                🧭 Dashboard
             </button>
         </form>
     </div>
