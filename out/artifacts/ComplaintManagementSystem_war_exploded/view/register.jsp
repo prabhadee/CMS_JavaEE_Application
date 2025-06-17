@@ -8,7 +8,13 @@
 </head>
 <body>
 <div class="container">
-    <h1>Register</h1>
+    <div class="form-title">
+        <h1>Register</h1>
+        <h2>Complaint Management System</h2>
+    </div>
+
+
+
     <form action="${pageContext.request.contextPath}/registerservlet" method="post">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" value="${oldUsername != null ? oldUsername : ''}" class="${not empty usernameError ? 'invalid' : ''}">
