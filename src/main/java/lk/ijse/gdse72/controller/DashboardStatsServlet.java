@@ -21,11 +21,11 @@ public class DashboardStatsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("get methid ekata awa AdminViewComplaintServlet ");
+        System.out.println("Admin Complaint Servlet to GET method");
 
         HttpSession session = req.getSession(false);
         if (session == null || session.getAttribute("user") == null) {
-            System.out.println("session eka null welada koheda ..!");
+            System.out.println("Session is null ..!");
 
             resp.sendRedirect(req.getContextPath() + "/index.jsp");
             return;
