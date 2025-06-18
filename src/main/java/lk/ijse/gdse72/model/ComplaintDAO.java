@@ -1,6 +1,6 @@
 package lk.ijse.gdse72.model;
 
-import lk.ijse.gdse72.model.podos.ComplaintDTO;
+import lk.ijse.gdse72.model.pojos.ComplaintDTO;
 import lk.ijse.gdse72.util.DatabaseConfig;
 
 import java.sql.*;

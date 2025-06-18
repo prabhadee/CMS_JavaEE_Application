@@ -1,4 +1,4 @@
-<%@ page import="lk.ijse.gdse72.model.podos.UserDTO" %>
+<%@ page import="lk.ijse.gdse72.model.pojos.UserDTO" %>
 <%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
 <body>
 
 <div class="page-header">
-  <a href="<%=request.getContextPath()%>/view/admin-dashboard.jsp" class="back-btn">⬅ Back to Dashboard</a>
+  <a href="<%=request.getContextPath()%>/view/admin-dashboard.jsp" class="back-btn"> Back to Dashboard</a>
   <h1>All User List</h1>
 </div>
 

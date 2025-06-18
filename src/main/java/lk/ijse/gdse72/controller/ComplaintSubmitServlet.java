@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import lk.ijse.gdse72.model.ComplaintDAO;
-import lk.ijse.gdse72.model.podos.ComplaintDTO;
+import lk.ijse.gdse72.model.pojos.ComplaintDTO;
 import lk.ijse.gdse72.util.IdGenerator;
 
 import java.io.IOException;
@@ -65,7 +65,7 @@ public class ComplaintSubmitServlet extends HttpServlet {
 
 
         HttpSession session = req.getSession();
-        String submittedBy = ((lk.ijse.gdse72.model.podos.UserDTO)session.getAttribute("user")).getUserId();
+        String submittedBy = ((lk.ijse.gdse72.model.pojos.UserDTO)session.getAttribute("user")).getUserId();
 
         ComplaintDTO complaint = new ComplaintDTO();
         complaint.setComplaintId(IdGenerator.generateComplaintId());

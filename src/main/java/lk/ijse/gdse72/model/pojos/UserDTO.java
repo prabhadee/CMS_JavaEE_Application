@@ -1,4 +1,4 @@
-package lk.ijse.gdse72.model.podos;
+package lk.ijse.gdse72.model.pojos;
 
 import lombok.*;
 

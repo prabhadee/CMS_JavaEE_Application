@@ -1,5 +1,5 @@
 <%@ page session="true" %>
-<%@ page import="lk.ijse.gdse72.model.podos.ComplaintDTO" %>
+<%@ page import="lk.ijse.gdse72.model.pojos.ComplaintDTO" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
 <html>

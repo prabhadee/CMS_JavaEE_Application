@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lk.ijse.gdse72.model.UserDAO;
-import lk.ijse.gdse72.model.podos.UserDTO;
+import lk.ijse.gdse72.model.pojos.UserDTO;
 
 import java.io.IOException;
 import java.util.List;

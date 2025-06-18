@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lk.ijse.gdse72.model.ComplaintDAO;
-import lk.ijse.gdse72.model.podos.ComplaintDTO;
+import lk.ijse.gdse72.model.pojos.ComplaintDTO;
 
 import java.io.IOException;
 

@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import lk.ijse.gdse72.model.ComplaintDAO;
-import lk.ijse.gdse72.model.podos.ComplaintDTO;
+import lk.ijse.gdse72.model.pojos.ComplaintDTO;
 
 import java.io.IOException;
 import java.util.List;
@@ -25,7 +25,7 @@ public class MyComplaintsServlet extends HttpServlet {
             return;
         }
 
-        String userId = ((lk.ijse.gdse72.model.podos.UserDTO) session.getAttribute("user")).getUserId();
+        String userId = ((lk.ijse.gdse72.model.pojos.UserDTO) session.getAttribute("user")).getUserId();
 
         System.out.println("Before Call complainDAO.getComplainByUser: " + userId);
         List<ComplaintDTO> complaints = complaintDAO.getComplaintsByUser(userId);

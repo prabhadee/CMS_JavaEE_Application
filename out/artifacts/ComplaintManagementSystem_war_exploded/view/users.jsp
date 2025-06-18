@@ -9,7 +9,7 @@
 <body>
 
 <div class="page-header">
-  <a href="<%=request.getContextPath()%>/view/admin-dashboard.jsp" class="back-btn">⬅ Back to Dashboard</a>
+  <a href="<%=request.getContextPath()%>/view/admin-dashboard.jsp" class="back-btn"> Back to Dashboard</a>
   <h1>All User List</h1>
 </div>
 
